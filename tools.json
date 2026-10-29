@@ -1,0 +1,54 @@
+[
+  {
+    "name": "random_image",
+    "description": "Get a random dog photo. Returns image URL and breed name. Use when you need any dog picture without a specific breed preference.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
+    "name": "list_breeds",
+    "description": "List all available dog breeds and sub-breeds. Returns breed names and varieties. Use to explore breeds or validate a breed name before fetching images.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
+    "name": "breed_images",
+    "description": "Get multiple dog photos for a specific breed (e.g., 'labrador', 'poodle'). Returns array of image URLs. Use when you need a gallery of one breed.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "breed": {
+          "type": "string",
+          "description": "The breed name (e.g. \"hound\", \"labrador\"). Use list_breeds to see valid values."
+        },
+        "count": {
+          "type": "number",
+          "description": "Number of images to return. Defaults to 3."
+        }
+      },
+      "required": [
+        "breed"
+      ]
+    }
+  },
+  {
+    "name": "random_breed_image",
+    "description": "Get one dog photo for a specific breed (e.g., 'golden_retriever', 'bulldog'). Returns image URL and breed name. Use when you need exactly one photo of a particular breed.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "breed": {
+          "type": "string",
+          "description": "The breed name (e.g. \"hound\", \"labrador\"). Use list_breeds to see valid values."
+        }
+      },
+      "required": [
+        "breed"
+      ]
+    }
+  }
+]
