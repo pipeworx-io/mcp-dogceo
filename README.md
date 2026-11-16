@@ -1,15 +1,15 @@
 # mcp-dogceo
 
-Dog CEO MCP — wraps Dog CEO's Dog API (free, no auth)
+Unofficial Dog CEO MCP — wraps Dog CEO's Dog API (free, no auth)
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1863+ live data sources. This is an independent, unofficial integration — not affiliated with, endorsed by, or published by the upstream provider.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 2006+ live data sources. This is an independent, unofficial integration — not affiliated with, endorsed by, or published by the upstream provider.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
-| `random_image` | Get a random dog photo. Returns image URL and breed name. Use when you need any dog picture without a specific breed preference. |
-| `list_breeds` | List all available dog breeds and sub-breeds. Returns breed names and varieties. Use to explore breeds or validate a breed name before fetching images. |
+| `dogceo_random_image` | Get a random dog photo. Returns image URL and breed name. Use when you need any dog picture without a specific breed preference. |
+| `dogceo_list_breeds` | List all available dog breeds and sub-breeds. Returns breed names and varieties. Use to explore breeds or validate a breed name before fetching images. |
 | `breed_images` | Get multiple dog photos for a specific breed (e.g., 'labrador', 'poodle'). Returns array of image URLs. Use when you need a gallery of one breed. |
 | `random_breed_image` | Get one dog photo for a specific breed (e.g., 'golden_retriever', 'bulldog'). Returns image URL and breed name. Use when you need exactly one photo of a particular breed. |
 
@@ -57,7 +57,7 @@ directly, instead of just this one's:
 }
 ```
 
-Both URLs reach the same gateway and the same 1863+ data sources. The
+Both URLs reach the same gateway and the same 2006+ data sources. The
 only difference is which pack's tools are listed **directly**; `ask_pipeworx`
 reaches all of them from either one.
 

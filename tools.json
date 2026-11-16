@@ -1,6 +1,6 @@
 [
   {
-    "name": "random_image",
+    "name": "dogceo_random_image",
     "description": "Get a random dog photo. Returns image URL and breed name. Use when you need any dog picture without a specific breed preference.",
     "inputSchema": {
       "type": "object",
@@ -8,7 +8,7 @@
     }
   },
   {
-    "name": "list_breeds",
+    "name": "dogceo_list_breeds",
     "description": "List all available dog breeds and sub-breeds. Returns breed names and varieties. Use to explore breeds or validate a breed name before fetching images.",
     "inputSchema": {
       "type": "object",
